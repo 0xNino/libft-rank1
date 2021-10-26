@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ngenoud <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/25 18:14:14 by ngenoud           #+#    #+#             */
-/*   Updated: 2021/10/25 18:14:15 by ngenoud          ###   ########.fr       */
+/*   Created: 2021/10/26 11:32:34 by ngenoud           #+#    #+#             */
+/*   Updated: 2021/10/26 11:32:37 by ngenoud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
-{
-	return (('0' <= c && c <= '9'));
-}
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <unistd.h>
+# include <stdio.h>
+
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+
+#endif
